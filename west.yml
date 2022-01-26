@@ -48,6 +48,13 @@ manifest:
       url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-usb.git
       path: middleware/usb
       revision: 648341d833a048c7982d129e687e5a5e2fad19c0
-
+    - name: mcux-sdk-middleware-edgefast-bluetooth
+      url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-edgefast-bluetooth.git
+      path: middleware/edgefast_bluetooth
+      revision: a32e7204a94c781d19aa76025ccd0fc74acb1ad6
+    - name: mcux-sdk-middleware-ethermind
+      url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-ethermind.git
+      path: middleware/wireless/ethermind
+      revision: 071e496040723aaa69e0d5e0324a08296fad5c51
   self:
     path: core
