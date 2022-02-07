@@ -22,7 +22,7 @@ manifest:
 
   projects:
     - name: mcux-sdk-examples
-      revision: MCUX_2.10.0
+      revision: b58d7a0c2dba35c2158e0614917a8cefe7f75c90
       path: examples
     - name: FreeRTOS-Kernel
       revision: MCUX_2.10.0
@@ -32,23 +32,34 @@ manifest:
       path: middleware/sdmmc
     - name: mcux-sdk-middleware-multicore
       path: middleware/multicore
-      revision: MCUX_2.10.0
+      revision: 50d7e6bd2e0501aad2944abe4eaf616fd465fb8e
     - name: rpmsg-lite
       path: middleware/multicore/rpmsg_lite
       url:  https://github.com/NXPmicro/rpmsg-lite
-      revision: 3933134378690a9c04d533e26516b3388fe4acc3
+      revision: d203ade3010a5e79ecb9aab50aa1c1af707efaa6
     - name: erpc
       path: middleware/multicore/erpc
       url:  https://github.com/EmbeddedRPC/erpc
-      revision: 1.8.1
+      revision: 1.9.0
     - name: mcux-soc-svd
       revision: 4043d9ec3b173a0c45212e5536e0e8352a8634b5
       path: svd
-    - name: mcux-sdk-fatfs
-      url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-fatfs.git
+    - name: fatfs
       path: middleware/fatfs
       revision: MCUX_2.10.0
-    - name: mcux-sdk-usb.git
+    - name: mcux-sdk-middleware-eiq
+      revision: MCUX_2.10.0
+      path: middleware/eiq
+    - name: mcux-sdk-middleware-deepviewrt
+      revision: MCUX_2.10.0
+      path: middleware/eiq/deepviewrt
+    - name: mcux-sdk-middleware-glow
+      revision: MCUX_2.10.0
+      path: middleware/eiq/glow
+    - name: mcux-sdk-middleware-tensorflow
+      revision: MCUX_2.10.0
+      path: middleware/eiq/tensorflow-lite
+    - name: mcux-sdk-middleware-usb
       url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-usb.git
       path: middleware/usb
       revision: 648341d833a048c7982d129e687e5a5e2fad19c0
