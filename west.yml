@@ -71,5 +71,33 @@ manifest:
       url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-ethermind.git
       path: middleware/wireless/ethermind
       revision: 071e496040723aaa69e0d5e0324a08296fad5c51
+    - name: mcux-azure-rtos
+      url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-azure-rtos.git
+      path: rtos/azure-rtos
+      revision: MCUX_2.11.0
+    - name: threadx
+      url: ssh://git@bitbucket.sw.nxp.com/dnind/threadx.git
+      path: rtos/azure-rtos/threadx
+      revision: MCUX_2.11.0
+    - name: filex
+      url: ssh://git@bitbucket.sw.nxp.com/dnind/filex.git
+      path: rtos/azure-rtos/filex
+      revision: MCUX_2.11.0
+    - name: levelx
+      url: ssh://git@bitbucket.sw.nxp.com/dnind/levelx.git
+      path: rtos/azure-rtos/levelx
+      revision: MCUX_2.11.0
+    - name: netxduo
+      url: ssh://git@bitbucket.sw.nxp.com/dnind/netxduo.git
+      path: rtos/azure-rtos/netxduo
+      revision: MCUX_2.11.0
+    - name: usbx
+      url: ssh://git@bitbucket.sw.nxp.com/dnind/usbx.git
+      path: rtos/azure-rtos/usbx
+      revision: MCUX_2.11.0
+    - name: guix
+      url: ssh://git@bitbucket.sw.nxp.com/dnind/guix.git
+      path: rtos/azure-rtos/guix
+      revision: MCUX_2.11.0
   self:
     path: core
