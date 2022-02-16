@@ -50,11 +50,11 @@ manifest:
   - name: mcux-sdk-middleware-edgefast-bluetooth
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-edgefast-bluetooth.git
     path: middleware/edgefast_bluetooth
-    revision: a32e7204a94c781d19aa76025ccd0fc74acb1ad6
+    revision: b5aaed033ff07233a5c181f550b784f5b9ae5d21
   - name: mcux-sdk-middleware-ethermind
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-ethermind.git
     path: middleware/wireless/ethermind
-    revision: 071e496040723aaa69e0d5e0324a08296fad5c51
+    revision: 41c38d943e731ad70133cf222d4a7d31c3d30ebc
   - name: mcux-azure-rtos
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-azure-rtos.git
     path: rtos/azure-rtos
