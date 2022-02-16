@@ -1,103 +1,87 @@
-# The west manifest file (west.yml) for MCUXpresso SDK overall delivery.
-#
-# The per-workspace west configuration file, ${workspace_path}/.west/config,
-# specifies the path of the project containing this manifest file, the
-# path is relative to the workspace location ${workspace_path}.
-#
-#     [manifest]
-#     path = core
-#
-# See the west documentation for more information:
-#
-# https://docs.zephyrproject.org/latest/guides/west/index.html
-
 manifest:
-  
   remotes:
-    - name: nxpmicro
-      url-base: https://github.com/NXPmicro
-
+  - name: nxpmicro
+    url-base: git@bitbucket.sw.nxp.com:mcucore
   defaults:
     remote: nxpmicro
-
   projects:
-    - name: mcux-sdk-examples
-      revision: b58d7a0c2dba35c2158e0614917a8cefe7f75c90
-      path: examples
-    - name: FreeRTOS-Kernel
-      revision: MCUX_2.10.0
-      path: rtos/freertos/freertos_kernel
-    - name: mcux-sdk-middleware-sdmmc
-      revision: MCUX_2.10.0
-      path: middleware/sdmmc
-    - name: mcux-sdk-middleware-multicore
-      path: middleware/multicore
-      revision: 50d7e6bd2e0501aad2944abe4eaf616fd465fb8e
-    - name: rpmsg-lite
-      path: middleware/multicore/rpmsg_lite
-      url:  https://github.com/NXPmicro/rpmsg-lite
-      revision: d203ade3010a5e79ecb9aab50aa1c1af707efaa6
-    - name: erpc
-      path: middleware/multicore/erpc
-      url:  https://github.com/EmbeddedRPC/erpc
-      revision: 1.9.0
-    - name: mcux-soc-svd
-      revision: 4043d9ec3b173a0c45212e5536e0e8352a8634b5
-      path: svd
-    - name: fatfs
-      path: middleware/fatfs
-      revision: MCUX_2.10.0
-    - name: mcux-sdk-middleware-eiq
-      revision: MCUX_2.10.0
-      path: middleware/eiq
-    - name: mcux-sdk-middleware-deepviewrt
-      revision: MCUX_2.10.0
-      path: middleware/eiq/deepviewrt
-    - name: mcux-sdk-middleware-glow
-      revision: MCUX_2.10.0
-      path: middleware/eiq/glow
-    - name: mcux-sdk-middleware-tensorflow
-      revision: MCUX_2.10.0
-      path: middleware/eiq/tensorflow-lite
-    - name: mcux-sdk-middleware-usb
-      url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-usb.git
-      path: middleware/usb
-      revision: 648341d833a048c7982d129e687e5a5e2fad19c0
-    - name: mcux-sdk-middleware-edgefast-bluetooth
-      url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-edgefast-bluetooth.git
-      path: middleware/edgefast_bluetooth
-      revision: a32e7204a94c781d19aa76025ccd0fc74acb1ad6
-    - name: mcux-sdk-middleware-ethermind
-      url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-ethermind.git
-      path: middleware/wireless/ethermind
-      revision: 071e496040723aaa69e0d5e0324a08296fad5c51
-    - name: mcux-azure-rtos
-      url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-azure-rtos.git
-      path: rtos/azure-rtos
-      revision: MCUX_2.11.0
-    - name: threadx
-      url: ssh://git@bitbucket.sw.nxp.com/dnind/threadx.git
-      path: rtos/azure-rtos/threadx
-      revision: MCUX_2.11.0
-    - name: filex
-      url: ssh://git@bitbucket.sw.nxp.com/dnind/filex.git
-      path: rtos/azure-rtos/filex
-      revision: MCUX_2.11.0
-    - name: levelx
-      url: ssh://git@bitbucket.sw.nxp.com/dnind/levelx.git
-      path: rtos/azure-rtos/levelx
-      revision: MCUX_2.11.0
-    - name: netxduo
-      url: ssh://git@bitbucket.sw.nxp.com/dnind/netxduo.git
-      path: rtos/azure-rtos/netxduo
-      revision: MCUX_2.11.0
-    - name: usbx
-      url: ssh://git@bitbucket.sw.nxp.com/dnind/usbx.git
-      path: rtos/azure-rtos/usbx
-      revision: MCUX_2.11.0
-    - name: guix
-      url: ssh://git@bitbucket.sw.nxp.com/dnind/guix.git
-      path: rtos/azure-rtos/guix
-      revision: MCUX_2.11.0
+  - name: mcux-sdk-examples-github.git
+    revision: 56dcc09f13be0d9b52dcdad6c0d61e15873fc258
+    path: examples
+  - name: freertos-kernel.git
+    revision: 2d417b08798756c7f1ca12fc1a399aed91c15562
+    path: rtos/freertos/freertos_kernel
+  - name: mcux-sdk-sdmmc.git
+    revision: b33d5824e7278318cd2e0fe961132c89f8c4cb38
+    path: middleware/sdmmc
+  - name: mcux-sdk-multicore.git
+    path: middleware/multicore
+    revision: 59a4ac1a4cbb566f904205c67e1b9bfbd9afbbde
+  - name: rpmsg-lite
+    path: middleware/multicore/rpmsg_lite
+    url: https://github.com/NXPmicro/rpmsg-lite
+    revision: d203ade3010a5e79ecb9aab50aa1c1af707efaa6
+  - name: erpc
+    path: middleware/multicore/erpc
+    url: https://github.com/EmbeddedRPC/erpc
+    revision: 56393dffb3c5b6eea29bb486cd9868be86f1e83a
+  - name: mcux-soc-svd.git
+    revision: 25f39a20a2811cff867863897393967b5a4d5635
+    path: svd
+  - name: mcux-sdk-fatfs.git
+    path: middleware/fatfs
+    revision: 46c842a9ecf8683043c156a92f600fba22663328
+  - name: mcux-sdk-eiq.git
+    revision: ad6cc93e18d6086ca897a729aad72b75ab70b5c6
+    path: middleware/eiq
+  - name: mcux-sdk-deepviewrt.git
+    revision: 654013590dfab7ba2913598381c35bb42fb74e66
+    path: middleware/eiq/deepviewrt
+  - name: mcux-sdk-glow.git
+    revision: 32cde8de0c97efaed1a2a28d756f10c78afceee4
+    path: middleware/eiq/glow
+  - name: mcux-sdk-tensorflow.git
+    revision: 3c9b3936260d83561c6cbb91ce7ee3ad9f68401d
+    path: middleware/eiq/tensorflow-lite
+  - name: mcux-sdk-middleware-usb
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-usb.git
+    path: middleware/usb
+    revision: e605e4139c8d0d55a8820953e04252205fe3a77d
+  - name: mcux-sdk-middleware-edgefast-bluetooth
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-edgefast-bluetooth.git
+    path: middleware/edgefast_bluetooth
+    revision: a32e7204a94c781d19aa76025ccd0fc74acb1ad6
+  - name: mcux-sdk-middleware-ethermind
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-ethermind.git
+    path: middleware/wireless/ethermind
+    revision: 071e496040723aaa69e0d5e0324a08296fad5c51
+  - name: mcux-azure-rtos
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-azure-rtos.git
+    path: rtos/azure-rtos
+    revision: be7cc4fafbd22c30bc97f26d4b77961fdbc5632e
+  - name: threadx
+    url: ssh://git@bitbucket.sw.nxp.com/dnind/threadx.git
+    path: rtos/azure-rtos/threadx
+    revision: 765b1bcc11f12882ecfb1d895741edd48dd93f3c
+  - name: filex
+    url: ssh://git@bitbucket.sw.nxp.com/dnind/filex.git
+    path: rtos/azure-rtos/filex
+    revision: 9f8995952786c539445e63e12978dff56ed80022
+  - name: levelx
+    url: ssh://git@bitbucket.sw.nxp.com/dnind/levelx.git
+    path: rtos/azure-rtos/levelx
+    revision: f4af09378fa3ae8aa412118db5170a04df7dab43
+  - name: netxduo
+    url: ssh://git@bitbucket.sw.nxp.com/dnind/netxduo.git
+    path: rtos/azure-rtos/netxduo
+    revision: f6acc0053d137a1ccb6b7c364cd3c24f1f98eab1
+  - name: usbx
+    url: ssh://git@bitbucket.sw.nxp.com/dnind/usbx.git
+    path: rtos/azure-rtos/usbx
+    revision: d1f51edef36582dd0a875879e8563c5b13066e9e
+  - name: guix
+    url: ssh://git@bitbucket.sw.nxp.com/dnind/guix.git
+    path: rtos/azure-rtos/guix
+    revision: d5eb8d8d3ddee252226b1e475254f9029c8a5659
   self:
     path: core
