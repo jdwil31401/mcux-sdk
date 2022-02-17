@@ -20,11 +20,11 @@ manifest:
   - name: rpmsg-lite
     path: middleware/multicore/rpmsg_lite
     url: https://github.com/NXPmicro/rpmsg-lite
-    revision: d203ade3010a5e79ecb9aab50aa1c1af707efaa6
+    revision: v3.2.0
   - name: erpc
     path: middleware/multicore/erpc
     url: https://github.com/EmbeddedRPC/erpc
-    revision: 56393dffb3c5b6eea29bb486cd9868be86f1e83a
+    revision: 1.9.0
   - name: mcux-soc-svd.git
     revision: 25f39a20a2811cff867863897393967b5a4d5635
     path: svd
@@ -32,7 +32,7 @@ manifest:
     path: middleware/fatfs
     revision: 46c842a9ecf8683043c156a92f600fba22663328
   - name: mcux-sdk-eiq.git
-    revision: ad6cc93e18d6086ca897a729aad72b75ab70b5c6
+    revision: 8ac0c8494e59c3033fe6470ee45885478513d14e
     path: middleware/eiq
   - name: mcux-sdk-deepviewrt.git
     revision: 654013590dfab7ba2913598381c35bb42fb74e66
@@ -41,7 +41,7 @@ manifest:
     revision: 32cde8de0c97efaed1a2a28d756f10c78afceee4
     path: middleware/eiq/glow
   - name: mcux-sdk-tensorflow.git
-    revision: 3c9b3936260d83561c6cbb91ce7ee3ad9f68401d
+    revision: f06d4c0183e64be8624ea0e9ea21a350d3d4228b
     path: middleware/eiq/tensorflow-lite
   - name: mcux-sdk-middleware-usb
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-usb.git
@@ -50,38 +50,38 @@ manifest:
   - name: mcux-sdk-middleware-edgefast-bluetooth
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-edgefast-bluetooth.git
     path: middleware/edgefast_bluetooth
-    revision: a32e7204a94c781d19aa76025ccd0fc74acb1ad6
+    revision: b5aaed033ff07233a5c181f550b784f5b9ae5d21
   - name: mcux-sdk-middleware-ethermind
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-ethermind.git
     path: middleware/wireless/ethermind
-    revision: 071e496040723aaa69e0d5e0324a08296fad5c51
+    revision: 41c38d943e731ad70133cf222d4a7d31c3d30ebc
   - name: mcux-azure-rtos
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-azure-rtos.git
     path: rtos/azure-rtos
-    revision: be7cc4fafbd22c30bc97f26d4b77961fdbc5632e
+    revision: MCUX_2.11.0
   - name: threadx
     url: ssh://git@bitbucket.sw.nxp.com/dnind/threadx.git
     path: rtos/azure-rtos/threadx
-    revision: 765b1bcc11f12882ecfb1d895741edd48dd93f3c
+    revision: MCUX_2.11.0
   - name: filex
     url: ssh://git@bitbucket.sw.nxp.com/dnind/filex.git
     path: rtos/azure-rtos/filex
-    revision: 9f8995952786c539445e63e12978dff56ed80022
+    revision: MCUX_2.11.0
   - name: levelx
     url: ssh://git@bitbucket.sw.nxp.com/dnind/levelx.git
     path: rtos/azure-rtos/levelx
-    revision: f4af09378fa3ae8aa412118db5170a04df7dab43
+    revision: MCUX_2.11.0
   - name: netxduo
     url: ssh://git@bitbucket.sw.nxp.com/dnind/netxduo.git
     path: rtos/azure-rtos/netxduo
-    revision: f6acc0053d137a1ccb6b7c364cd3c24f1f98eab1
+    revision: MCUX_2.11.0
   - name: usbx
     url: ssh://git@bitbucket.sw.nxp.com/dnind/usbx.git
     path: rtos/azure-rtos/usbx
-    revision: d1f51edef36582dd0a875879e8563c5b13066e9e
+    revision: MCUX_2.11.0
   - name: guix
     url: ssh://git@bitbucket.sw.nxp.com/dnind/guix.git
     path: rtos/azure-rtos/guix
-    revision: d5eb8d8d3ddee252226b1e475254f9029c8a5659
+    revision: MCUX_2.11.0
   self:
     path: core
