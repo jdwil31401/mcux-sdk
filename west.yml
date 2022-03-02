@@ -46,7 +46,7 @@ manifest:
   - name: mcux-sdk-middleware-usb
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-usb.git
     path: middleware/usb
-    revision: e605e4139c8d0d55a8820953e04252205fe3a77d
+    revision: MCUX_2.11.0
   - name: mcux-sdk-middleware-edgefast-bluetooth
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-edgefast-bluetooth.git
     path: middleware/edgefast_bluetooth
