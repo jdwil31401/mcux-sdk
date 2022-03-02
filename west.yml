@@ -35,7 +35,7 @@ manifest:
     revision: 8ac0c8494e59c3033fe6470ee45885478513d14e
     path: middleware/eiq
   - name: mcux-sdk-deepviewrt.git
-    revision: 654013590dfab7ba2913598381c35bb42fb74e66
+    revision: MCUX_2.11.0
     path: middleware/eiq/deepviewrt
   - name: mcux-sdk-glow.git
     revision: 32cde8de0c97efaed1a2a28d756f10c78afceee4
