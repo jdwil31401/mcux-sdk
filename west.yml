@@ -16,7 +16,7 @@ manifest:
     path: middleware/sdmmc
   - name: mcux-sdk-multicore.git
     path: middleware/multicore
-    revision: 59a4ac1a4cbb566f904205c67e1b9bfbd9afbbde
+    revision: MCUX_2.11.0
   - name: rpmsg-lite
     path: middleware/multicore/rpmsg_lite
     url: https://github.com/NXPmicro/rpmsg-lite
