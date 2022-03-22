@@ -6,7 +6,7 @@ manifest:
     remote: nxpmicro
   projects:
   - name: mcux-sdk-examples-github.git
-    revision: 863386c9a14ca0802feedd11ea685ba6e214da7d
+    revision: c5a3e441b30c9124ea4badf422437be8750d8409
     path: examples
   - name: freertos-kernel.git
     revision: 5f449f6510831674e9867f9a61e29eecbedfdc1c
@@ -16,7 +16,7 @@ manifest:
     path: middleware/sdmmc
   - name: mcux-sdk-multicore.git
     path: middleware/multicore
-    revision: a175185e7998794096f40eab86532155e7c2acb1
+    revision: 507289ca9ec55e3e016f17bfcd3ebc010f4f34ce
   - name: rpmsg-lite
     path: middleware/multicore/rpmsg_lite
     url: https://github.com/NXPmicro/rpmsg-lite
@@ -24,6 +24,6 @@ manifest:
   - name: erpc
     path: middleware/multicore/erpc
     url: https://github.com/EmbeddedRPC/erpc
-    revision: 9849c5d0d9544ec3cec0f17711f65237b9aa6358
+    revision: ab306fc1a64e12769ee52819b85189374e639588
   self:
     path: core
