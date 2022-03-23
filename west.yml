@@ -6,7 +6,7 @@ manifest:
     remote: nxpmicro
   projects:
   - name: mcux-sdk-examples-github.git
-    revision: c5a3e441b30c9124ea4badf422437be8750d8409
+    revision: 96976374bba2e76bcd11817f8738248d9317039a
     path: examples
   - name: freertos-kernel.git
     revision: 5f449f6510831674e9867f9a61e29eecbedfdc1c
