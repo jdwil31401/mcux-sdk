@@ -103,5 +103,10 @@ manifest:
     revision: MCUX_2.12.0
     remote: nxp
     url: ssh://git@bitbucket.sw.nxp.com/dnind/guix.git
+  - name: mcux-sdk-mbedtls
+    path: middleware/mbedtls
+    revision: MCUX_2.12.0
+    remote: nxp
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-mbedtls.git
   self:
     path: core
