@@ -21,7 +21,7 @@ manifest:
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-sdmmc.git
   - name: mcux-sdk-middleware-multicore
     path: middleware/multicore
-    revision: fc49ea3d7b5e06158c52b756585b576b7feb1139
+    revision: MCUX_2.12.0
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-multicore.git
   - name: rpmsg-lite
     path: middleware/multicore/rpmsg_lite
