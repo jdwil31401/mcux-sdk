@@ -57,7 +57,7 @@ manifest:
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-tensorflow.git
   - name: mcux-sdk-middleware-usb
     path: middleware/usb
-    revision: 564e19fffba78e551faaf8b478e6b0d992de92e6
+    revision: MCUX_2.12.0
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-usb.git
   - name: mcux-sdk-middleware-edgefast-bluetooth
     path: middleware/edgefast_bluetooth
