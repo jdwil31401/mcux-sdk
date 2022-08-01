@@ -108,5 +108,10 @@ manifest:
     revision: MCUX_2.12.0
     remote: nxp
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-mbedtls.git
+  - name: mcux-sdk-wifi-nxp
+    path: middleware/wifi_nxp
+    revision: MCUX_2.12.0
+    remote: nxp
+    url: ssh://git@bitbucket.sw.nxp.com/scm/mcucore/mcux-sdk-wifi-nxp.git
   self:
     path: core
