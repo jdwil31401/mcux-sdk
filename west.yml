@@ -112,6 +112,6 @@ manifest:
     path: middleware/wifi_nxp
     revision: 9df4697c8890e1aacaf086a16ca43ec30bcbcbaf
     remote: nxp
-    url: ssh://git@bitbucket.sw.nxp.com/scm/mcucore/mcux-sdk-wifi-nxp.git
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-wifi-nxp.git
   self:
     path: core
