@@ -113,5 +113,9 @@ manifest:
     revision: b721678b37472579eeceda67887ff18d65e98f61
     remote: nxp
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-wifi-nxp.git
+  - name: lwip
+    path: middleware/lwip
+    revision: 2c1abcd457faec4ef11c0ece428b62575e88ad51
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/lwip.git
   self:
     path: core
