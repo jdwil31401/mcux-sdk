@@ -117,5 +117,9 @@ manifest:
     path: middleware/lwip
     revision: 2c1abcd457faec4ef11c0ece428b62575e88ad51
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/lwip.git
+  - name: littlefs
+    path: middleware/littlefs
+    revision: MCUX_2.12.0
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/littlefs.git
   self:
     path: core
