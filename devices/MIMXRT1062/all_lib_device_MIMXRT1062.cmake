@@ -101,6 +101,7 @@ list(APPEND CMAKE_MODULE_PATH
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/eiq/tensorflow-lite
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/eiq/tensorflow-lite/third_party/cmsis
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/fatfs
+    ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/littlefs
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/lwip
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/mbedtls
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/multicore
@@ -125,7 +126,7 @@ list(APPEND CMAKE_MODULE_PATH
 #    include(component_codec_adapters)
 #    include(middleware_usb_host_stack_MIMXRT1062)
 #    include(middleware_sdmmc_osa_bm)
-#    include(middleware_sdmmc_mmc)
+#    include(middleware_littlefs)
 #    include(driver_dmamux)
 #    include(driver_phy-common)
 #    include(middleware_lwip_apps_lwiperf)
@@ -158,6 +159,7 @@ list(APPEND CMAKE_MODULE_PATH
 #    include(driver_ocotp)
 #    include(driver_codec)
 #    include(driver_pxp)
+#    include(middleware_sdmmc_mmc)
 #    include(driver_xip_device)
 #    include(component_mflash_rt1060)
 #    include(middleware_eiq_deepviewrt_deps_stb)

@@ -79,6 +79,7 @@ list(APPEND CMAKE_MODULE_PATH
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/eiq/tensorflow-lite
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/eiq/tensorflow-lite/third_party/cmsis
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/fatfs
+    ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/littlefs
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/lwip
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/mbedtls
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/multicore
@@ -260,6 +261,7 @@ list(APPEND CMAKE_MODULE_PATH
 #    include(component_osa)
 #    include(driver_fmeas)
 #    include(middleware_sdmmc_host_usdhc_freertos_MIMXRT685S_cm33)
+#    include(middleware_littlefs)
 #    include(middleware_usb_host_ip3516hs_MIMXRT685S_cm33)
 #    include(middleware_wifi_sdio)
 #    include(middleware_freertos-kernel_secure_context)

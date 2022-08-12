@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ksdk:manifest xmlns:ksdk="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SDK_2.x_MIMXRT1170-EVK_manifest_v3_10" name="SDKVersion 2.12.0 SuperSet" brief="This is SDK version 2.12.0 manifest file." format_version="3.10" api_version="2.0.0" configuration="37bbf4eb706f3814bfad8f3a27525c83" xsi:schemaLocation="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd http://nxp.com/mcuxpresso/sdk/sdk_manifest_v3.10.xsd">
-  <!--Timestamp (UTC): 2022-08-04 15:19:54.764804-->
+  <!--Timestamp (UTC): 2022-08-11 14:59:59.713202-->
   <!--This manifest is generated based on sdk repo commit: 7fb442914f92023b395b260777eb2355254fd71d-->
   <defines>
     <define name="CPU_$|package|" value=""/>
@@ -12,6 +12,7 @@
     <definition extID="evkbmimxrt1170"/>
     <definition extID="middleware.freertos-kernel.MIMXRT1176"/>
     <definition extID="middleware.usb.device.cdc.external.MIMXRT1176"/>
+    <definition extID="middleware.littlefs.MIMXRT1176"/>
     <definition extID="middleware.multicore.erpc.MIMXRT1176"/>
     <definition extID="middleware.multicore.MIMXRT1176"/>
     <definition extID="middleware.wifi.MIMXRT1176"/>
@@ -22,6 +23,7 @@
     <manifest_include path="../middleware/eiq/middleware_nxp_eiq_machine_learning_MIMXRT1176_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/fatfs/middleware_elm_chan_fatfs_MIMXRT1176_manifest_v3_10.xml"/>
     <manifest_include path="../rtos/freertos/freertos_kernel/middleware_amazon_freertos_kernel_MIMXRT1176_manifest_v3_10.xml"/>
+    <manifest_include path="../middleware/littlefs/middleware_christopher_haster_littlefs_MIMXRT1176_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/lwip/middleware_adam_dunkels_lwip_MIMXRT1176_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/mbedtls/middleware_arm_mbedtls_MIMXRT1176_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/mmcau/middleware_nxp_mmcau_MIMXRT1176_manifest_v3_10.xml"/>
@@ -3263,6 +3265,14 @@ ${load}</script>
         <files mask="eIQ TensorFlow Lite Library User's Guide.pdf"/>
         <files mask="eIQ_Media_Processing_Pipeline_Release_Notes.pdf"/>
         <files mask="eIQ_Media_Processing_Pipeline_User_Guide.pdf"/>
+      </source>
+    </component>
+    <component id="docs.littlefs.MIMXRT1176" name="doc_littlefs" brief="Littlefs documentation" version="1.0.0" full_name="Littlefs documentation" devices="MIMXRT1176xxxxx" user_visible="true" type="documentation" package_base_path="docs/littlefs" project_base_path="littlefs">
+      <dependencies>
+        <component_dependency value="middleware.littlefs.MIMXRT1176"/>
+      </dependencies>
+      <source relative_path="./" type="doc">
+        <files mask="littlefs.txt"/>
       </source>
     </component>
     <component id="docs.multicore.MIMXRT1176" name="docs_multicore" brief="Collection of Multicore SDK documentation" version="2.12.0" full_name="Multicore SDK documentation" devices="MIMXRT1176xxxxx" user_visible="true" type="documentation" package_base_path="docs/MULTICORE" project_base_path="MULTICORE">

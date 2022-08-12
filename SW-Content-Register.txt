@@ -10,7 +10,7 @@ SDK_Peripheral_Driver      Name: SDK Peripheral Driver
                            Description: Peripheral drivers are designed for  
                            the most common use cases identified for the      
                            underlying hardware block.                        
-                           Location: devices/<device>/drivers                
+                           Location: drivers                                
                            Origin: NXP (BSD-3-Clause)                        
 
 SDK_Examples               Name: SDK examples                                
@@ -22,7 +22,7 @@ SDK_Examples               Name: SDK examples
                            Description: SDK out of box examples to show how  
                            to use peripheral drivers and integrate           
                            middleware.                                       
-                           Location: boards/<board>/                         
+                           Location: examples/<board>/                        
                            Origin: NXP (BSD-3-Clause)                        
 
 SDK_Device                 Name: SDK SoC files                               
@@ -148,7 +148,7 @@ cmsis_drivers              Name: SDK CMSIS Peripheral Drivers
                            to provide hardware independent APIs which make   
                            application reusable across a wide range of       
                            supported microcontroller devices.                
-                           Location: devices/<device>/cmsis_drivers          
+                           Location: cmsis_drivers                           
                            Origin: NXP (Apache License 2.0)                  
 
 MCMGR                      Name: MCMGR                                       
@@ -235,61 +235,17 @@ cpp_option_parser          Name: C++ option-parser
                            http://www.bradapp.com/ftp/src/libs/C++/Options.ht
                            ml                                                
 
-freemaster                 Name: FreeMASTER                                  
-                           Version: 3.0.5                                    
-                           Outgoing License: LA_OPT_NXP_Software_License.txt 
-                           v35 May 2022 - Additional distribution license    
-                           granted - License in Section 2.3 applies          
-                           License File:                                     
-                           middleware/freemaster/license/LA_OPT_NXP_Software_
-                           License.txt                                       
-                           Format: source code & header files                
-                           Description: FreeMASTER communication driver      
-                           Location: middleware/freemaster/src               
-                           Origin: NXP                                       
-
-freemaster-examples        Name: FreeMASTER                                  
-                           Version: 3.0.5                                    
+LittleFS                   Name: LittleFS                                    
+                           Version: 2.4.1                                    
                            Outgoing License: BSD-3-Clause                    
-                           License File: COPYING-BSD-3                       
-                           Format: source code & header files                
-                           Description: FreeMASTER example applications      
-                           Location: boards/<board>/freemaster_examples      
-                           Origin: NXP                                       
-
-gradle                     Name: Gradle                                      
-                           Version: 4.1                                      
-                           Outgoing License: Apache-2.0                      
-                           License File:                                     
-                           https://github.com/gradle/gradle/blob/master/LICEN
-                           SE                                                
-                           Format: binary library                            
-                           Description: Gradle build tool                    
-                           Location:                                         
-                           boards/<board>/aws_examples/remote_control_android
-                           /gradle,                                          
-                           boards/<board>/aws_examples/led_wifi_android/gradl
-                           e,                                                
-                           boards/<board>/aws_examples/device_configuration_a
-                           ndroid/gradle                                     
-                           Origin: Gradle Inc (Apache-2.0)                   
-                           Url: https://github.com/gradle/gradle             
-
-AwsRemoteControl           Name: AWS Remote Control                          
-                           Version: 1.0                                      
-                           Outgoing License: Apache-2.0 & BSD                
-                           License File:                                     
-                           http://www.apache.org/licenses/LICENSE-2.0,       
-                           COPYING-BSD-3                                     
-                           Format: binary                                    
-                           Description: AWS Remote Control example Android   
-                           application                                       
-                           Location:                                         
-                           boards/<board>/aws_examples/remote_control_android
-                           /AwsRemoteControl.apk                             
-                           Origin: Android Open Source Project               
-                           (https://source.android.com/) & NXP (Apache-2.0 & 
-                           BSD)                                              
+                           License File: middleware/littlefs/LICENSE.md      
+                           Format: source code                               
+                           Description: LittleFS - A little fail-safe        
+                           filesystem designed for microcontrollers          
+                           Location: middleware/littlefs                     
+                           Origin: Christopher Haster                        
+                           (https://github.com/geky/)                        
+                           Url: https://github.com/littlefs-project/littlefs 
 
 TensorFlow Lite            Name: TensorFlow Lite for Microcontrollers        
                            Version: 22-02-16 (commit 9efa395)                
@@ -563,15 +519,30 @@ mpp                        Name: Multimedia Processing Pipelines (MPP)
                            Location: middleware/eiq/mpp                      
                            Origin: NXP                                       
 
-rtcesl                     Name: rtcesl                                      
-                           Version: 4.7 (CM0,CM4,CM7,CM33) + 4.5 (DSC)       
+bt_ble_hoststack           Name: Bluetooth and Bluetooth Low Energy Host     
+                           Stack                                             
+                           Version: 16.5.16                                  
+                           Outgoing License: LA_OPT_NXP_Software_License.txt 
+                           v35 May 2022 - Additional distribution license    
+                           granted - License in Section 2.3 applies          
+                           License File: LA_OPT_NXP_Software_License.txt     
+                           Format: Source, Binary libraries                  
+                           Description: Bluetooth and Bluetooth Low Energy   
+                           Host Stack.                                       
+                           Location: middleware/wireless/ethermind           
+                           Origin: Mindtree                                  
+
+EdgeFast_PAL               name: EdgeFast Protocol Abstraction Layer         
+                           version: 0.1.0                                    
                            Outgoing License: BSD-3-Clause                    
                            License File: COPYING-BSD-3                       
-                           Format: object code & header files                
-                           Description: NXP Real Time Control Embedded       
-                           Software Library.                                 
-                           Location: middleware/rtcesl                       
-                           Origin: NXP (BSD-3-Clause)                        
+                           Format: source code, header files                 
+                           Description: EdgeFast Bluetooth PAL               
+                           Location: middleware/edgefast_bluetooth           
+                           Origin: NXP (BSD-3-Clause) Zephyr BT/BLE Host     
+                           stack (Apache-2.0) -                              
+                           https://github.com/zephyrproject-rtos/zephyr/tree/
+                           v2.6-branch/subsys/bluetooth                      
 
 sdmmc_sdspi                Name: SD Card middleware                          
                            Version: 2.1.4                                    
@@ -596,44 +567,6 @@ segger_systemview          Name: Segger SystemView Demo
                            s_segger_sysview                                  
                            Origin: Segger (BSD-1-Clause)                     
 
-dsp_audio_framework        Name: dsp_audio_framework                         
-                           Version: 2.6p2                                    
-                           Outgoing License: LA_OPT_NXP_Software_License.txt 
-                           v35 May 2022 - Additional distribution license    
-                           granted - License in Section 2.3 applies          
-                           License File: LA_OPT_NXP_Software_License.txt     
-                           Format: source code                               
-                           Description: DSP Audio Streamer Framework based on
-                           Xtensa Audio Framework from Cadence Design        
-                           Location: middleware/dsp/audio_framework          
-                           Origin: Cadence Design Systems, Inc. & NXP        
-
-dsp_nn                     Name: Cadence HiFi4 Neural Network (NN) Library   
-                           Version: 2.4.1                                    
-                           Outgoing License: LA_OPT_NXP_Software_License.txt 
-                           v35 May 2022 - No distribution permitted, license 
-                           in Section 2.2 applies.                           
-                           License File: LA_OPT_NXP_Software_License.txt     
-                           Format: source code, header files, binary files   
-                           Description: DSP Neural Networks Framework based  
-                           on Xtensa Neural Networks Library from Cadence    
-                           Design                                            
-                           Location: middleware/dsp/nn                       
-                           Origin: Cadence Design Systems, Inc. & NXP        
-                           (proprietary)                                     
-
-naturedsp_fusionf1         Name: naturedsp                                   
-                           Version: 1.2.0                                    
-                           Outgoing License: LA_OPT_NXP_Software_License.txt 
-                           v35 May 2022 - No distribution permitted, license 
-                           in Section 2.2 applies.                           
-                           License File: LA_OPT_NXP_Software_License.txt     
-                           Format: source code, precompiled library          
-                           Description: Digital Signal Processing for Xtensa 
-                           Fusion Audio Engines                              
-                           Location: middleware/dsp/naturedsp/fusionf1       
-                           Origin: Cadence Design Systems (Proprietary)      
-
 Pedometer_Library          Name: Pedometer Library                           
                            Version: 1.0                                      
                            Outgoing License: LA_OPT_NXP_Software_License.txt 
@@ -646,18 +579,6 @@ Pedometer_Library          Name: Pedometer Library
                            Location:                                         
                            middleware/issdk/algorithms/pedometer/lib         
                            Origin: KEYnetik, Inc                             
-
-naturedsp_hifi4            Name: naturedsp                                   
-                           Version: 4.1.0                                    
-                           Outgoing License: LA_OPT_NXP_Software_License.txt 
-                           v35 May 2022 - No distribution permitted, license 
-                           in Section 2.2 applies.                           
-                           License File: LA_OPT_NXP_Software_License.txt     
-                           Format: source code                               
-                           Description: Digital Signal Processing for Xtensa 
-                           HiFi Audio Engines                                
-                           Location: middleware/dsp/naturedsp/hifi4          
-                           Origin: Cadence Design Systems (Proprietary)      
 
 CRC32-GS                   Name: CRC32 code                                  
                            Version: NA                                       

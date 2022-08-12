@@ -8,7 +8,7 @@ manifest:
     remote: nxpmicro
   projects:
   - name: mcux-sdk-examples
-    revision: 0f476c710f9b5983a7239dd2813270e3f0dad7bf
+    revision: e0b9d8c9fe429d4541c1a4962e19aa4ccf04d7fe
     path: examples
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-examples-github.git
   - name: FreeRTOS-Kernel

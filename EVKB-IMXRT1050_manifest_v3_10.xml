@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ksdk:manifest xmlns:ksdk="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="SDK_2.x_EVKB-IMXRT1050_manifest_v3_10" name="SDKVersion 2.12.0 SuperSet" brief="This is SDK version 2.12.0 manifest file." format_version="3.10" api_version="2.0.0" configuration="37bbf4eb706f3814bfad8f3a27525c83" xsi:schemaLocation="http://nxp.com/ksdk/2.0/ksdk_manifest_v3.0.xsd http://nxp.com/mcuxpresso/sdk/sdk_manifest_v3.10.xsd">
-  <!--Timestamp (UTC): 2022-08-04 15:20:06.719100-->
+  <!--Timestamp (UTC): 2022-08-11 15:00:11.601066-->
   <!--This manifest is generated based on sdk repo commit: 7fb442914f92023b395b260777eb2355254fd71d-->
   <defines>
     <define name="CPU_$|package|" value=""/>
@@ -10,6 +10,7 @@
   <externalDefinitions>
     <definition extID="middleware.freertos-kernel.MIMXRT1052"/>
     <definition extID="middleware.usb.device.cdc.external.MIMXRT1052"/>
+    <definition extID="middleware.littlefs.MIMXRT1052"/>
     <definition extID="middleware.wifi.MIMXRT1052"/>
   </externalDefinitions>
   <ksdk id="MCUXpressoSDK2120" name="MCUXpressoSDK2120" version="2.12.0"/>
@@ -21,10 +22,12 @@
     <manifest_include path="../rtos/azure-rtos/middleware_microsoft_azure_rtos_nxd_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../rtos/azure-rtos/middleware_microsoft_azure_rtos_tx_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../rtos/azure-rtos/middleware_microsoft_azure_rtos_ux_MIMXRT1052_manifest_v3_10.xml"/>
+    <manifest_include path="../middleware/wireless/middleware_nxp_edgefast_bluetooth_pal_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/wifi_nxp/middleware_nxp_wifi_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/eiq/middleware_nxp_eiq_machine_learning_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/fatfs/middleware_elm_chan_fatfs_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../rtos/freertos/freertos_kernel/middleware_amazon_freertos_kernel_MIMXRT1052_manifest_v3_10.xml"/>
+    <manifest_include path="../middleware/littlefs/middleware_christopher_haster_littlefs_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/lwip/middleware_adam_dunkels_lwip_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/mbedtls/middleware_arm_mbedtls_MIMXRT1052_manifest_v3_10.xml"/>
     <manifest_include path="../middleware/sdmmc/middleware_nxp_sd_mmc_sdio_card_MIMXRT1052_manifest_v3_10.xml"/>
@@ -3096,6 +3099,13 @@ ${load}</script>
         <files mask="MCUXpresso SDK Azure RTOS Release Notes.pdf"/>
       </source>
     </component>
+    <component id="docs.Edgefast.MIMXRT1052" name="Edgefast" brief="Docs edgefast bluetooth" version="1.0.0" full_name="Docs edgefast bluetooth" devices="MIMXRT1052xxxxB" user_visible="true" type="documentation" package_base_path="docs/wireless/Bluetooth/Edgefast_bluetooth" project_base_path="wireless/Edgefast">
+      <source relative_path="./" type="doc">
+        <files mask="MCUXpressoSDK EdgeFast Bluetooth Protocol Abstraction Layer User's Guide.pdf"/>
+        <files mask="Hardware Rework Guide for EdgeFast BT PAL.pdf"/>
+        <files mask="EFBTPALAPIRM.pdf"/>
+      </source>
+    </component>
     <component id="docs.FreeRTOS.MIMXRT1052" name="FreeRTOS documentation" brief="FreeRTOS documentation" version="1.0.0" full_name="FreeRTOS documentation" devices="MIMXRT1052xxxxB" user_visible="true" type="documentation" package_base_path="docs/FreeRTOS" project_base_path="FreeRTOS">
       <dependencies>
         <component_dependency value="middleware.freertos-kernel.MIMXRT1052"/>
@@ -3127,6 +3137,14 @@ ${load}</script>
         <files mask="eIQ TensorFlow Lite Library User's Guide.pdf"/>
         <files mask="eIQ_Media_Processing_Pipeline_Release_Notes.pdf"/>
         <files mask="eIQ_Media_Processing_Pipeline_User_Guide.pdf"/>
+      </source>
+    </component>
+    <component id="docs.littlefs.MIMXRT1052" name="doc_littlefs" brief="Littlefs documentation" version="1.0.0" full_name="Littlefs documentation" devices="MIMXRT1052xxxxB" user_visible="true" type="documentation" package_base_path="docs/littlefs" project_base_path="littlefs">
+      <dependencies>
+        <component_dependency value="middleware.littlefs.MIMXRT1052"/>
+      </dependencies>
+      <source relative_path="./" type="doc">
+        <files mask="littlefs.txt"/>
       </source>
     </component>
     <component id="docs.wifi.MIMXRT1052" name="doc_wifi" brief="Wi-Fi documentation" version="1.0.0" full_name="Wi-Fi documentation" devices="MIMXRT1052xxxxB" device_cores="core0_MIMXRT1052xxxxB" user_visible="true" type="documentation" package_base_path="docs/wireless/Wi-Fi" project_base_path="wireless/Wi-Fi">

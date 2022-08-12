@@ -102,11 +102,13 @@ list(APPEND CMAKE_MODULE_PATH
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/eiq/tensorflow-lite
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/eiq/tensorflow-lite/third_party/cmsis
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/fatfs
+    ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/littlefs
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/lwip
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/mbedtls
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/sdmmc
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/usb
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/wifi_nxp
+    ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/wireless/ethermind
     ${CMAKE_CURRENT_LIST_DIR}/../../../rtos/azure-rtos
     ${CMAKE_CURRENT_LIST_DIR}/../../../rtos/freertos/freertos_kernel
     ${CMAKE_CURRENT_LIST_DIR}/../../utilities/assert
@@ -317,12 +319,14 @@ list(APPEND CMAKE_MODULE_PATH
 #    include(driver_fxos8700cq)
 #    include(middleware_eiq_worker_sensor)
 #    include(driver_lpuart)
+#    include(middleware_littlefs)
 #    include(driver_flexio_spi)
 #    include(component_pit_adapter)
 #    include(middleware_sdmmc_host_usdhc_interrupt_MIMXRT1052)
 #    include(middleware_eiq_worker_video_MIMXRT1052)
 #    include(middleware_eiq_tensorflow_lite_micro_third_party_gemmlowp)
 #    include(middleware_mbedtls_rt)
+#    include(middleware_edgefast_bluetooth_k32w061_controller)
 #    include(driver_fbdev)
 #    include(middleware_eiq_tensorflow_lite_micro_cmsis_nn)
 #    include(middleware_lwip_empty_ethernetif)

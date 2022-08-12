@@ -59,6 +59,7 @@ list(APPEND CMAKE_MODULE_PATH
     ${CMAKE_CURRENT_LIST_DIR}/../../drivers/wwdt
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/fatfs
+    ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/littlefs
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/lwip
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/mbedtls
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/sdmmc
@@ -208,6 +209,7 @@ list(APPEND CMAKE_MODULE_PATH
 #    include(driver_rng)
 #    include(component_osa)
 #    include(driver_fmeas)
+#    include(middleware_littlefs)
 #    include(driver_sdif)
 #    include(middleware_mbedtls_lpc2)
 #    include(middleware_sdmmc_host_sdif_interrupt)
