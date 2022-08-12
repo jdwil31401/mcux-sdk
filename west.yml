@@ -61,11 +61,11 @@ manifest:
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-usb.git
   - name: mcux-sdk-middleware-edgefast-bluetooth
     path: middleware/edgefast_bluetooth
-    revision: 28ddaac1a4134592640f35df6466a6fe30f09227
+    revision: a4ece506ed32068deb5da0085d69c2b1ca80e70c
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-edgefast-bluetooth.git
   - name: mcux-sdk-middleware-ethermind
     path: middleware/wireless/ethermind
-    revision: 005dec2ee817cfb641c13ada354a72267719f00d
+    revision: 9d096895db435687254de6810fb94ea6586a0950
     remote: nxp
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-ethermind.git
   - name: azure-rtos
