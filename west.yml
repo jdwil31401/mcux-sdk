@@ -41,6 +41,8 @@ manifest:
       path: middleware/multicore/erpc
       url:  https://github.com/EmbeddedRPC/erpc
       revision: 1.8.0
-
+    - name: lwip
+      path: middleware/lwip
+      revision: c385f31076b27efb8ee37f00cb5568783a58f299 
   self:
     path: core
