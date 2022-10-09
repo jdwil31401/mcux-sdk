@@ -8,3 +8,28 @@ manifest:
     remote: nxpmicro
   self:
     path: core
+  projects:
+  - name: mcux-sdk-examples
+    revision: 06d8fcc3807e6d851dbdaf1bb4d93947753cb09a
+    path: examples
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-examples-github.git
+  - name: mcux-sdk-middleware-connectivity-framework
+    revision: 401da0d08985d1ab602e20dcc64e249d165c2640
+    path: middleware/wireless/framework
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-middleware-connectivity-framework.git
+  - name: mcux-sdk-middleware-bluetooth-controller
+    path: middleware/wireless/ble_controller
+    revision: 13bd249a6b1e06cd40332dbce760e450230d7e89
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-middleware-bluetooth-controller.git
+  - name: mcux-sdk-middleware-bluetooth-host
+    path: middleware/wireless/bluetooth
+    revision: e1d1c1072039c1d0300832cbfd5bd9d54e746ab0
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-middleware-bluetooth-host.git
+  - name: mcux-sdk-middleware-ieee_802.15.4
+    path: middleware/wireless/ieee-802.15.4
+    revision: 5b78b1b7ef6e463b96844a92eb285db287c3a8f9
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-middleware-ieee_802.15.4.git
+  - name: amazon-freertos
+    path: rtos/amazon-freertos
+    revision: 1eea45dccaabbfe360c0a4c250e8c7ae9a75536a
+    url: ssh://git@bitbucket.sw.nxp.com/mcucore/amazon-freertos.git
