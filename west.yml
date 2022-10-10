@@ -6,11 +6,11 @@ manifest:
     remote: nxpmicro
   projects:
   - name: mcux-sdk-examples
-    revision: 57d4942cdfccc6f4380a6bc43072dab2ced2b12a
+    revision: 5cd7a6e753e0f28fe1a895189cb51c9607e37a49
     path: examples
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-examples-github.git
   - name: FreeRTOS-Kernel
-    revision: 369b19c903026908ffb44431b91083055a740da9
+    revision: 247fceb185f9bb65ade9a9c2e849522807b4b3f9
     path: rtos/freertos/freertos_kernel
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/freertos-kernel.git
   - name: mcux-sdk-middleware-sdmmc
@@ -31,7 +31,7 @@ manifest:
     revision: 6a571caf6d5042af5d63ff8745f2e4b24e14bc9f
   - name: lwip
     path: middleware/lwip
-    revision: 5b7886c24cff9f87d4f1ed5c677cfa275a957497
+    revision: 79f3c7930cfc744f85523704363349b38b81f433
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/lwip.git
   - name: mbedtls
     path: middleware/mbedtls

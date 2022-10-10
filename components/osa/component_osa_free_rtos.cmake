@@ -12,7 +12,7 @@ target_include_directories(${MCUX_SDK_PROJECT_NAME} PUBLIC
 
 #OR Logic component
 if(${MCUX_DEVICE} STREQUAL "88MW320")
-    include(middleware_freertos-kernel)
+    include(middleware_freertos-kernel_88MW320)
 endif()
 if(${MCUX_DEVICE} STREQUAL "K32L3A60_cm0plus")
     include(middleware_freertos-kernel_K32L3A60_cm0plus)

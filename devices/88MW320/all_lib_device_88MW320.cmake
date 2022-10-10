@@ -29,7 +29,7 @@ list(APPEND CMAKE_MODULE_PATH
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/mbedtls
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/sdmmc
     ${CMAKE_CURRENT_LIST_DIR}/../../../middleware/wifi
-    ${CMAKE_CURRENT_LIST_DIR}/../../../rtos/freertos
+    ${CMAKE_CURRENT_LIST_DIR}/../../../rtos/freertos/freertos_kernel
     ${CMAKE_CURRENT_LIST_DIR}/../../utilities/assert
     ${CMAKE_CURRENT_LIST_DIR}/../../utilities/debug_console
     ${CMAKE_CURRENT_LIST_DIR}/../../utilities/misc_utilities
@@ -55,7 +55,7 @@ list(APPEND CMAKE_MODULE_PATH
 #    include(device_startup)
 #    include(driver_clock)
 #    include(driver_mw_adc)
-#    include(middleware_freertos-kernel)
+#    include(middleware_freertos-kernel_88MW320)
 #    include(driver_mw_dac)
 #    include(middleware_sdmmc_host_sdioc_freertos)
 #    include(driver_mw_crc)
