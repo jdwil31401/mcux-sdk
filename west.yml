@@ -35,7 +35,7 @@ manifest:
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/lwip.git
   - name: mbedtls
     path: middleware/mbedtls
-    revision: ca0ed0548b102eb669d0f920a2de36864e50821c
+    revision: 75010b7b49c72067f4c3e57361975069075bca74
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-mbedtls.git
   self:
     path: core
