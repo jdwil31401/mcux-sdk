@@ -39,7 +39,7 @@ manifest:
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-mbedtls.git
   - name: wifi_nxp
     path: middleware/wifi
-    revision: d498bf34873151fd7f0cfa8e944f78c5066718d7
+    revision: b1e9cc126ec820a22cdb59da8b1fa37980e8cf66
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-wifi-nxp.git
   self:
     path: core
