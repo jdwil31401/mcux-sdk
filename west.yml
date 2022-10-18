@@ -14,7 +14,7 @@ manifest:
     path: rtos/freertos/freertos_kernel
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/freertos-kernel.git
   - name: mcux-sdk-middleware-sdmmc
-    revision: 92d79a983ee23bcb1a17bca151eb6c2030964cf0
+    revision: 3789034d53336cf6ca73d7777aa05fd7d2d81ad3
     path: middleware/sdmmc
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/mcux-sdk-sdmmc.git
   - name: mcux-sdk-middleware-multicore
