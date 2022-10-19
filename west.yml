@@ -31,7 +31,7 @@ manifest:
     revision: 6a571caf6d5042af5d63ff8745f2e4b24e14bc9f
   - name: lwip
     path: middleware/lwip
-    revision: 79f3c7930cfc744f85523704363349b38b81f433
+    revision: 4ef9433dee75f3597f782d817a432b0cf950750d
     url: ssh://git@bitbucket.sw.nxp.com/mcucore/lwip.git
   - name: mbedtls
     path: middleware/mbedtls
